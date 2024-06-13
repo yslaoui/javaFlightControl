@@ -38,7 +38,7 @@ public class FlightManager {
     }
 
     public void addFlight(String airplaneId, String departureAirportId, String destinationAirportId) {
-        Airplane airplane = this.airplanes.getOrDefault(airplaneId, null);
+        Airplane airplane = this.airplanes.getOrDefault(airplaneId, null) ;
         Place departure =  new Place(departureAirportId);
         Place destination = new Place(destinationAirportId);
         Flight flight = new Flight(airplane, departure, destination);
